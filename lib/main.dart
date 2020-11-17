@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: Colors.blue,
         appBar: new AppBar(
           backgroundColor: Colors.black,
-          title: new Text('Busca Localização'),
+          title: new Text('Busca Localização e Tempo atual'),
         ),
         body: new SingleChildScrollView(
           child: new Container(
@@ -137,7 +137,7 @@ class _MyAppState extends State<MyApp> {
         ),
         Container(
           width: double.infinity,
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(16.0),
           margin: const EdgeInsets.only(bottom: 10.0),
           child: Text(
             'Temperatura: ' + temperatura.toString(),
@@ -148,6 +148,9 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
         Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(16.0),
+          margin: const EdgeInsets.only(bottom: 10.0),
           child: Text(
             'Umidade do Ar: ' + umidadeAr.toString(),
             style: TextStyle(
